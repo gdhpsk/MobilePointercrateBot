@@ -136,7 +136,7 @@ let counter = Object.keys(levels).indexOf(level)+1
                 bu.addComponents(
                     new Discord.ButtonBuilder()
                     .setCustomId(i.toString())
-                    .setStyle("PRIMARY")
+                    .setStyle(Discord.ButtonStyle.Primary)
                     .setLabel(emoji[i])
                 )
             }
