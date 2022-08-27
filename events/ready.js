@@ -2,7 +2,6 @@
 const { REST } = require("@discordjs/rest")
 const { Routes } = require("discord-api-types/v9")
 const { guildId } = require("../config.json")
-require("dotenv").config()
 const token = process.env.token
 module.exports = {
     name: "ready",

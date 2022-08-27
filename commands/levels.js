@@ -88,7 +88,7 @@ module.exports = {
           }
           
 let counter = Object.keys(levels).indexOf(level)+1
-            let embed = new Discord.MessageEmbed()
+            let embed = new Discord.EmbedBuilder()
                 .setTitle(`#${Object.keys(levels).indexOf(level) + 1} - ${levels[level].name} by ${levels[level].host} and verified by ${levels[level].verifier}`)
                 .setURL(`https://www.youtube.com/watch?v=${levels[level].ytcode}`)
                 .setDescription(txt)
@@ -118,7 +118,7 @@ let counter = Object.keys(levels).indexOf(level)+1
               let level = Object.keys(levels)[j]
               txt += `${j+1}. ${level} by ${Object.values(levels)[j].host} and verified by ${Object.values(levels)[j].verifier}\n\n`
             }
-            array.push(new Discord.MessageEmbed().setTitle("HRR Mobile List Levels").setDescription(txt).setFooter({text: `Page ${i+1} / ${amount+addition}`}))
+            array.push(new Discord.EmbedBuilder().setTitle("HRR Mobile List Levels").setDescription(txt).setFooter({text: `Page ${i+1} / ${amount+addition}`}))
           }
           if(addition == 1) {
             for(let i = amount; i < amount+1; i++) {
@@ -127,14 +127,14 @@ let counter = Object.keys(levels).indexOf(level)+1
               let level = Object.keys(levels)[j]
               txt += `${j+1}. ${level} by ${Object.values(levels)[j].host} and verified by ${Object.values(levels)[j].verifier}\n\n`
             }
-            array.push(new Discord.MessageEmbed().setTitle("HRR Mobile List Levels").setDescription(txt).setFooter({text: `Page ${i+1} / ${amount+addition}`}))
+            array.push(new Discord.EmbedBuilder().setTitle("HRR Mobile List Levels").setDescription(txt).setFooter({text: `Page ${i+1} / ${amount+addition}`}))
           }
           }
-                  let bu = new Discord.MessageActionRow()
+                  let bu = new Discord.ActionRowBuilder()
         let emoji = ["Back", "Next", "Skip Forward", "Skip Back"]
             for(let i = 0; i < 4; i++) {
                 bu.addComponents(
-                    new Discord.MessageButton()
+                    new Discord.ButtonBuilder()
                     .setCustomId(i.toString())
                     .setStyle("PRIMARY")
                     .setLabel(emoji[i])
