@@ -1,7 +1,7 @@
 {
     "guildId": "953548345400504390",
-    "api_levels": "https://hrrmobilelist.com/JSON/mainlist.json",
-  "api_additions": "https://hrrmobilelist.com/JSON/additions.json",
+    "api_levels": "https://mobilepointercrate.com/JSON/mainlist.json",
+  "api_additions": "https://mobilepointercrate.com/JSON/additions.json",
   "api_flags": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/index.json",
-  "api_leaderboard": "https://hrrmobilelist.com/api/leaderboard"
+  "api_leaderboard": "https://mobilepointercrate.com/api/leaderboard"
 }

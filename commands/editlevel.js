@@ -43,7 +43,7 @@ module.exports = {
     private: true,
     async execute(interaction, Discord, client) {
        await interaction.deferReply()
-        let access = await request(`https://hrrmobilelist.com/access?key=${process.env.APIKey}`)
+        let access = await request(`https://mobilepointercrate.com/access?key=${process.env.APIKey}`)
       let access_body = await access.body.json()
        if(!access_body.includes(interaction.user.id)) return interaction.editReply(`You do not have permission to run this command.`)
       let dic = {
@@ -55,7 +55,7 @@ module.exports = {
         }
         dic[item.name] = item.value
       }
-      let submit = await request(`https://hrrmobilelist.com/levels?key=${process.env.APIKey}`, {
+      let submit = await request(`https://mobilepointercrate.com/levels?key=${process.env.APIKey}`, {
         method: "PATCH",
         body: JSON.stringify(dic),
         headers: {
