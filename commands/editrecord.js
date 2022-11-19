@@ -41,7 +41,7 @@ module.exports = {
       .setRequired(false)
     )
   .addBooleanOption(option => option
-      .setName("removed")
+      .setName("remove")
       .setDescription("Should the record be removed by default?")
       .setRequired(false)
     ),
