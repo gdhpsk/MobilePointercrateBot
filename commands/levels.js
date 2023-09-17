@@ -50,7 +50,7 @@ module.exports = {
                             arr[0] = ` :flag_${countries[index].code.toLowerCase()}:`
                         }
                     }
-                    txt += `-${arr[0]} ${list.name} [beat ${levels[level].name} on ${list.hertz}hz](${list.link}), with ${list.milliseconds}ms delay.\n\n`
+                    txt += `-${arr[0]} ${list.name} [beat ${levels[level].name} on ${list.hertz}hz](${list.link}).\n\n`
                 }
             }
           if(Object.keys(levels).indexOf(level) < 25 && levels[level].listpercentage) {
@@ -79,7 +79,7 @@ module.exports = {
                                 arr[0] = ` ${countries[index].emoji}`
                             }
                         }
-                        txt += `-${arr[0]} ${list.name} [got ${list.percent}% on  ${levels[level].name} on ${list.hertz}hz](${list.link}), with ${list.milliseconds}ms delay.\n\n`
+                        txt += `-${arr[0]} ${list.name} [got ${list.percent}% on  ${levels[level].name} on ${list.hertz}hz](${list.link}).\n\n`
                     }
                 }
             }

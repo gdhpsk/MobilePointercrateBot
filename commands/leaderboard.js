@@ -192,10 +192,10 @@ module.exports = {
           let placement = Object.keys(levels).indexOf(completion.name)+1
           if(placement < 101) {
             regularcount += 1
-            txt2 += `${regularcount}. ${completion.name} 100% (#${placement}, ${completion.hertz}hz, ${completion.milliseconds}ms)\n`
+            txt2 += `${regularcount}. ${completion.name} 100% (#${placement}, ${completion.hertz}hz)\n`
           } else {
             legacycount += 1
-            txt3 += `${legacycount}. ${completion.name} 100% (#${placement}, ${completion.hertz}hz, ${completion.milliseconds}ms)\n`
+            txt3 += `${legacycount}. ${completion.name} 100% (#${placement}, ${completion.hertz}hz)\n`
           }
         }
         if(txt2 == "**COMPLETIONS**\n\n") {
@@ -216,7 +216,7 @@ module.exports = {
           let completion = leaderboard[profile].progresses[i]
           let placement = Object.keys(levels).indexOf(completion.name)+1
           if(placement < 101) {
-            txt += `${i+1}. ${completion.name} ${completion.percent}% (#${placement}, ${completion.hertz}hz, ${completion.milliseconds}ms)\n`
+            txt += `${i+1}. ${completion.name} ${completion.percent}% (#${placement}, ${completion.hertz}hz)\n`
           }
         }
       } else {

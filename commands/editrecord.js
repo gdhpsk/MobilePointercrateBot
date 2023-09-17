@@ -21,11 +21,6 @@ module.exports = {
       .setRequired(false)
     )
   .addStringOption(option => option
-      .setName("milliseconds")
-      .setDescription("Input the ms amount of the screen.")
-      .setRequired(false)
-    )
-  .addStringOption(option => option
       .setName("date")
       .setDescription("When was this record recorded? mm/dd/yy format.")
       .setRequired(false)

@@ -21,11 +21,6 @@ module.exports = {
       .setRequired(true)
     )
   .addStringOption(option => option
-      .setName("milliseconds")
-      .setDescription("Input the ms amount of the screen.")
-      .setRequired(true)
-    )
-  .addStringOption(option => option
       .setName("date")
       .setDescription("When was this record recorded? mm/dd/yy format.")
       .setRequired(true)
@@ -55,7 +50,6 @@ module.exports = {
         level: interaction.options.getString("level"),
         name: interaction.options.getString("name"),
         percent: interaction.options.getInteger("percent"),
-        milliseconds: interaction.options.getString("milliseconds"),
         date: interaction.options.getString("date"),
         link: interaction.options.getString("link"),
         hertz: interaction.options.getString("hertz"),
